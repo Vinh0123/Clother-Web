@@ -38,16 +38,6 @@ CREATE TABLE `tbl_cart` (
   `img_pro` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Dumping data for table `tbl_cart`
---
-
-INSERT INTO `tbl_cart` (`id`, `id_order`, `id_pro`, `quantity`, `prices`, `size`, `name_pro`, `img_pro`) VALUES
-(201, 141, 90, 2, 27000000.00, 'L', 'Grey Vest', 'suit (6).png'),
-(202, 142, 90, 1, 27000000.00, 'L', 'Grey Vest', 'suit (6).png'),
-(203, 142, 91, 1, 27500000.00, 'XL', 'Black Vest', 'suit (2).png'),
-(204, 143, 95, 1, 20000000.00, 'L', 'Ken Vest', 'product-39.png'),
-(206, 145, 90, 1, 27000000.00, 'L', 'Grey Vest', 'suit (6).png');
 
 -- --------------------------------------------------------
 
@@ -161,14 +151,14 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`id_product`, `product_name`, `quantity`, `product_img`, `product_prices`, `catalog_id`, `employee_entry`, `entry_date`, `sup_id`, `view`, `special`, `old_prices`, `description`, `size`) VALUES
-(90, 'Áo dài truyền thống', 148, 'aodai1.jpg', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(91, 'Áo dài có hoạ tiết', 149, 'aodai2.jpg', 27500000, 95, 1, '2023-06-08', 16, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XL'),
-(92, 'Áo dài có hoạ tiết', 273, 'aodai3.jpg', 20000000, 96, 1, '2023-06-08', 16, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
-(93, 'Áo dài truyền thống', 10, 'aodai4.png', 55000000, 96, 1, '2023-06-08', 14, 1, 1, 55000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'M'),
-(94, 'Áo dài truyền thống', 150, 'aodai5.png', 23000000, 95, 1, '2023-06-08', 14, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(95, 'Áo dài truyền thống', 122, 'aodai6.png', 20000000, 94, 1, '2023-06-08', 14, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(96, 'Áo dài truyền thống', 123, 'aodai7.png', 27000000, 94, 1, '2023-06-08', 14, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
-(97, 'Áo dài truyền thống', 123, 'aodai8.png', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXXL');
+(90, 'Áo dài truyền thống', 148, 'aodai1.jpg', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'L'),
+(91, 'Áo dài có hoạ tiết', 149, 'aodai2.jpg', 27500000, 95, 1, '2023-06-08', 16, 1, 1, 27500000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'XL'),
+(92, 'Áo dài có hoạ tiết', 273, 'aodai3.jpg', 20000000, 96, 1, '2023-06-08', 16, 1, 1, 20000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'XXL'),
+(93, 'Áo dài truyền thống', 10, 'aodai4.png', 55000000, 96, 1, '2023-06-08', 14, 1, 1, 55000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'M'),
+(94, 'Áo dài truyền thống', 150, 'aodai5.png', 23000000, 95, 1, '2023-06-08', 14, 1, 1, 27500000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'L'),
+(95, 'Áo dài truyền thống', 122, 'aodai6.png', 20000000, 94, 1, '2023-06-08', 14, 1, 1, 20000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'L'),
+(96, 'Áo dài truyền thống', 123, 'aodai7.png', 27000000, 94, 1, '2023-06-08', 14, 1, 1, 27000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'XXL'),
+(97, 'Áo dài truyền thống', 123, 'aodai8.png', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'The Áo Dài is Vietnam’s traditional long dress, known for its elegance and graceful silhouette. Featuring a fitted top with high slits on both sides and flowing panels, it embodies beauty, culture, and sophistication.', 'XXXL');
 
 
 -- --------------------------------------------------------
@@ -214,10 +204,9 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `name_us`, `address_us`, `email`, `user`, `password_us`, `role_us`) VALUES
-(1, 'Thưởng', 'KTXkhuA', '20522000@gm.uit.edu.vn', 'adminthuong', '123123', 1),
-(2, 'Hương', 'Bình Dương', '20521381@gm.uit.edu.vn', 'adminhuong', '123123', 1),
-(9, 'Hoà', 'ktxkhuA', '20521331@gmail.com', 'adminhoa', '123123', 1),
-(10, 'Lâm', 'Củ Chi', '20521515@gm.uit.edu.vn', 'adminlam', '123123', 1);
+(1, 'Vinh', 'KTXkhuA', '20522000@gm.uit.edu.vn', 'adminthuong', '123123', 1),
+(2, 'Vinh', 'Da Nang', '20521381@gm.uit.edu.vn', 'adminhuong', '123123', 1),
+
 
 --
 -- Indexes for dumped tables

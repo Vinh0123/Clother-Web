@@ -10,7 +10,7 @@
 
 ---------------------------------------------Start-----------------------------------------
 
-1. Open visual studio code -> open terminal -> run this command-> git clone https://github.com/Thuongcodelife/Kingsman_website.git (clone code)
+1. Open visual studio code -> open terminal -> run this command-> git clone https://github.com/Vinh0123/Clother-Web.git (clone code)
 2. Download Xampp.
 3. Put the source code in the htdocs of the Xampp folder.
 4. Run Xampp start Apache and MySQL.
