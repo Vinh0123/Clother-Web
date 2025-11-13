@@ -17,8 +17,8 @@
 5. Past "http://localhost/phpmyadmin/" in URL google.
 6. Create database with name "fashion" in localhost phpmyadmin.
 7. After that import database with data file in folder database.
-8. Run code following links URL Example "http://localhost:8080/Kingsman_website/admin/admin.php"
-9. Admin > Username: adminthuong Password: 123123 "http://localhost:8080/Kingsman_website/admin/login.php"
-10. User > Username: adminthuong Password: 123123 "http://localhost:8080/Kingsman_website/web_user/login_user.php"
+8. Run code following links URL Example "http://localhost:8080/Clother-Web/admin/admin.php"
+9. Admin > Username: adminthuong Password: 123123 "http://localhost:8080/Clother-Web/admin/login.php"
+10. User > Username: adminthuong Password: 123123 "http://localhost:8080/Clother-Web/web_user/login_user.php"
     <br>
     ---------------------------------------------End-----------------------------------------
