@@ -26,7 +26,7 @@ $(document).ready(function() {
             <div class="header-navbar">
                 <div class="header-brand">
                     <a href="fashionApp.php?act=home">
-                        <img style="  width: 231px; height: 52px;" src="../assets/images/logo/logo5.png"
+                        <img style="  width: 100px; height: 52px;" src="../assets/images/logo/logo.png"
                             alt="Site Logo" />
                     </a>
                 </div>
