@@ -67,9 +67,9 @@ CREATE TABLE `tbl_catalog` (
 --
 
 INSERT INTO `tbl_catalog` (`id_catalog_k`, `catalog_name`, `prioritize`, `display_ctl`) VALUES
-(94, 'Notch lapel', 1, 1),
-(95, 'Peak lapel', 1, 1),
-(96, 'Shawl lapel', 1, 1);
+(94, 'Áo dài', 1, 1),
+(95, 'Áo dài có hoạ tiết', 1, 1),
+(96, 'Áo dài đơn giản', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -95,9 +95,9 @@ CREATE TABLE `tbl_client` (
 --
 
 INSERT INTO `tbl_client` (`id`, `fname`, `lname`, `sex`, `address`, `email`, `phone`, `user`, `password`, `ban`) VALUES
-(32, 'Thuong', 'Nguyen', 2, 'KTX KHU A', '2052000@gm.uit.edu.vn', '0342888525', 'nhatthuong1234', '123', 0),
-(39, 'Thuong', 'Nguyen', 1, '1', '2002@gmail.com', '0342888525', 'adminthuong', '123123', 1),
-(40, 'Thuong', 'Nguyen', 2, '1', '2002@gmail.com', '+84342888525', 'adminthuong42342', '123123', 1);
+(32, 'Vinh', 'Tran', 2, 'KTX KHU A', '2052000@gm.uit.edu.vn', '0342888525', 'nhatthuong1234', '123', 0),
+(39, 'Vinh', 'Tran', 1, '1', '2002@gmail.com', '0342888525', 'adminthuong', '123123', 1),
+(40, 'Vinh', 'Tran', 2, '1', '2002@gmail.com', '+84342888525', 'adminthuong42342', '123123', 1);
 
 -- --------------------------------------------------------
 
@@ -127,11 +127,11 @@ CREATE TABLE `tbl_order` (
 --
 
 INSERT INTO `tbl_order` (`id`, `invoice_id`, `total_prices`, `payment`, `id_user`, `fname`, `lname`, `phone`, `email`, `address`, `notes`, `due_date`, `status`, `employee_pr`) VALUES
-(141, 'KINGSMAN876833', 59400000, 2, 39, 'Thuong', 'Nguyen', '0342888525', '2002@gmail.com', '1', '', '2023-06-08', 'Cancel', 1),
-(142, 'KINGSMAN80948', 59950000, 2, 39, 'Thuong', 'Nguyen', '0342888525', '2002@gmail.com', '1', 'hhi', '2023-06-08', 'Ordered', 9),
-(143, 'KINGSMAN728281', 22000000, 2, 39, 'Thuong', 'Nguyen', '0342888525', '2002@gmail.com', '1', '', '2023-06-08', 'Pending', NULL),
-(144, 'KINGSMAN7506', 29700000, 2, 39, 'Thuong', 'Nguyen', '0342888525', '2002@gmail.com', '1', '', '2023-06-09', 'Pending', NULL),
-(145, 'KINGSMAN216815', 29700000, 2, 40, 'Thuong', 'Nguyen', '0342888525', '2002@gmail.com', '1', '', '2023-06-09', 'Pending', NULL);
+(141, 'KINGSMAN876833', 59400000, 2, 39, 'Vinh', 'Tran', '0342888525', '2002@gmail.com', '1', '', '2023-06-08', 'Cancel', 1),
+(142, 'KINGSMAN80948', 59950000, 2, 39, 'Vinh', 'Tran', '0342888525', '2002@gmail.com', '1', 'hhi', '2023-06-08', 'Ordered', 9),
+(143, 'KINGSMAN728281', 22000000, 2, 39, 'Vinh', 'Tran', '0342888525', '2002@gmail.com', '1', '', '2023-06-08', 'Pending', NULL),
+(144, 'KINGSMAN7506', 29700000, 2, 39, 'Vinh', 'Tran', '0342888525', '2002@gmail.com', '1', '', '2023-06-09', 'Pending', NULL),
+(145, 'KINGSMAN216815', 29700000, 2, 40, 'Vinh', 'Tran', '0342888525', '2002@gmail.com', '1', '', '2023-06-09', 'Pending', NULL);
 
 -- --------------------------------------------------------
 
@@ -161,14 +161,15 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`id_product`, `product_name`, `quantity`, `product_img`, `product_prices`, `catalog_id`, `employee_entry`, `entry_date`, `sup_id`, `view`, `special`, `old_prices`, `description`, `size`) VALUES
-(90, 'Grey Vest', 148, 'suit (6).png', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(91, 'Black Vest', 149, 'suit (2).png', 27500000, 95, 1, '2023-06-08', 16, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XL'),
-(92, 'Brown Vest', 273, 'product-41.png', 20000000, 96, 1, '2023-06-08', 16, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
-(93, 'Kings Vest', 10, 'suit (3).png', 55000000, 96, 1, '2023-06-08', 14, 1, 1, 55000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'M'),
-(94, 'Supper Vest', 150, 'suit (5).png', 23000000, 95, 1, '2023-06-08', 14, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(95, 'Ken Vest', 122, 'product-39.png', 20000000, 94, 1, '2023-06-08', 14, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
-(96, 'Max Vest', 123, 'product-43.png', 27000000, 94, 1, '2023-06-08', 14, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
-(97, 'Break Vest', 123, 'suit (4).png', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXXL');
+(90, 'Áo dài truyền thống', 148, 'aodai1.jpg', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
+(91, 'Áo dài có hoạ tiết', 149, 'aodai2.jpg', 27500000, 95, 1, '2023-06-08', 16, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XL'),
+(92, 'Áo dài có hoạ tiết', 273, 'aodai3.jpg', 20000000, 96, 1, '2023-06-08', 16, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
+(93, 'Áo dài truyền thống', 10, 'aodai4.png', 55000000, 96, 1, '2023-06-08', 14, 1, 1, 55000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'M'),
+(94, 'Áo dài truyền thống', 150, 'aodai5.png', 23000000, 95, 1, '2023-06-08', 14, 1, 1, 27500000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
+(95, 'Áo dài truyền thống', 122, 'aodai6.png', 20000000, 94, 1, '2023-06-08', 14, 1, 1, 20000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'L'),
+(96, 'Áo dài truyền thống', 123, 'aodai7.png', 27000000, 94, 1, '2023-06-08', 14, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXL'),
+(97, 'Áo dài truyền thống', 123, 'aodai8.png', 27000000, 94, 1, '2023-06-08', 16, 1, 1, 27000000, 'A waistcoat has a full vertical opening in the front, which fastens with buttons or snaps. Both single-breasted and double-breasted waistcoats exist, regardless of the formality of dress, but single-breasted ones are more common. In a three piece suit, th', 'XXXL');
+
 
 -- --------------------------------------------------------
 
