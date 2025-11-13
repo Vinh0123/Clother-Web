@@ -1,5 +1,3 @@
-> UI / UX prototype: [here](https://www.figma.com/file/hP8yLSFgwHDQFOx6kgKqUI/Fashion-Web-UI%2FUX?node-id=0%3A1&t=pNkmhqDvo2T8ANsl-1)
-
 > Tech stacks:
 
 - Front-end:
@@ -24,43 +22,3 @@
 10. User > Username: adminthuong Password: 123123 "http://localhost:8080/Kingsman_website/web_user/login_user.php"
     <br>
     ---------------------------------------------End-----------------------------------------
-
-# MORE DETAILS ABOUT WEBSITE
-
-**1. Home Page Website**
-
-![alt text](./img_detail_git/homepage.png)
-
-<!-- **2. Detail Product**
-
-![alt text](./img_detail_git/details_product.png)
-
-**3. Cart**
-
-![alt text](./img_detail_git/cart.png)
-
-**4. Bill Information**
-
-![alt text](./img_detail_git/infor_bill.png)
-
-**5. Print Invoice**
-
-![alt text](./img_detail_git/invoice.png)
-
-**6. Login**
-
-![alt text](./img_detail_git/login_website.png) -->
-
-# MORE DETAILS ABOUT ADMIN
-
-**1. Homepage**
-
-![alt text](./img_detail_git/admin_invoice.png)
-
-<!-- **2. Insert Data**
-
-![alt text](./img_detail_git/insert_data.png)
-
-**3. Login**
-
-![alt text](./img_detail_git/login_admin.png) -->
